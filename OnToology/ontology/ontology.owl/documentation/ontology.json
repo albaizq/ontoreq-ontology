@@ -108,7 +108,7 @@
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/net/mpoveda"
   }, {
-    "@value" : "\"Alba Fernandez Izquierdo\""
+    "@value" : "Alba Fernandez Izquierdo"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
