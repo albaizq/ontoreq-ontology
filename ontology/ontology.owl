@@ -6,7 +6,29 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://w3id.org/def/ontoreq> .
 
-<http://w3id.org/def/ontoreq> rdf:type owl:Ontology .
+<http://w3id.org/def/ontoreq> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ,
+                                                                  "\"Alba Fernandez Izquierdo\"" ;
+                               owl:versionInfo "0.0.1" ;
+                               <http://purl.org/dc/elements/1.1/title> "Ontology model for ontological requirements" ;
+                               rdfs:comment "This ontology describes ontological requirements and their relation with lexico-syntactic patterns" ;
+                               <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -111,6 +133,18 @@
                                           owl:onProperty :hasImplementation ;
                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onClass :PatternImplementation
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :name ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :usageExample ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :patternExpression ;
+                                          owl:minCardinality "1"^^xsd:nonNegativeInteger
                                         ] ;
                         rdfs:label "Lexico-Syntactic Pattern" .
 
@@ -136,6 +170,18 @@
 
 ###  http://w3id.org/def/ontoreq#PatternImplementation
 :PatternImplementation rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :ontologyDesignPattern ;
+                                         owl:someValuesFrom rdfs:Literal
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :construct ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :expressivity ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ;
                        rdfs:label "Pattern implementation" .
 
 
