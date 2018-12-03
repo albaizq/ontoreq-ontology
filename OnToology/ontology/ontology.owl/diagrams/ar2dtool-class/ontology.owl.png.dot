@@ -2,12 +2,21 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "base:PatternImplementation" "base:OntologicalRequirement" "base:LexicoSyntacticPattern" ; /*classes style*/
-	"NULL" -> "base:OntologicalRequirement" [ label = "owl:allValuesFrom" ];
+	"http://w3id.org/def/ontoreq" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+	"http://w3id.org/def/ontoreq" -> "http://purl.org/net/mpoveda" [ label = ":creator" ];
 	"NULL" -> "base:hasRequirement" [ label = "owl:onProperty" ];
-	"NULL" -> "base:PatternImplementation" [ label = "owl:onClass" ];
-	"NULL" -> "base:hasImplementation" [ label = "owl:onProperty" ];
-	"NULL" -> "base:LexicoSyntacticPattern" [ label = "owl:onClass" ];
+	"NULL" -> "base:name" [ label = "owl:onProperty" ];
+	"NULL" -> "base:construct" [ label = "owl:onProperty" ];
+	"NULL" -> "base:patternExpression" [ label = "owl:onProperty" ];
+	"NULL" -> "base:ontologyDesignPattern" [ label = "owl:onProperty" ];
+	"NULL" -> "rdfs:Literal" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:belongsTo" [ label = "owl:onProperty" ];
+	"NULL" -> "base:PatternImplementation" [ label = "owl:onClass" ];
+	"NULL" -> "base:usageExample" [ label = "owl:onProperty" ];
+	"NULL" -> "base:OntologicalRequirement" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:hasImplementation" [ label = "owl:onProperty" ];
+	"NULL" -> "base:expressivity" [ label = "owl:onProperty" ];
+	"NULL" -> "base:LexicoSyntacticPattern" [ label = "owl:onClass" ];
 	"owl:Thing" -> "base:OntologicalRequirement" [ label = "base:hasRequirement" ];
 	"base:LexicoSyntacticPattern" -> "owl:Thing" [ label = "base:patternExpression" ];
 	"base:OntologicalRequirement" -> "rdfs:Literal" [ label = "base:competencyQuestion" ];
