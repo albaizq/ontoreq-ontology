@@ -1,0 +1,72 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "http://w3id.org/def/ontoreq#belongsTo",
+      "@type" : "@id"
+    },
+    "ontologyDesignPattern" : {
+      "@id" : "http://w3id.org/def/ontoreq#ontologyDesignPattern"
+    },
+    "hasImplementation" : {
+      "@id" : "http://w3id.org/def/ontoreq#hasImplementation",
+      "@type" : "@id"
+    },
+    "extractedFrom" : {
+      "@id" : "http://w3id.org/def/ontoreq#extractedFrom",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "competencyQuestion" : {
+      "@id" : "http://w3id.org/def/ontoreq#competencyQuestion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "uri" : {
+      "@id" : "http://w3id.org/def/ontoreq#uri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "LexicoSyntacticPattern" : {
+      "@id" : "http://w3id.org/def/ontoreq#LexicoSyntacticPattern"
+    },
+    "name" : {
+      "@id" : "http://w3id.org/def/ontoreq#name"
+    },
+    "construct" : {
+      "@id" : "http://w3id.org/def/ontoreq#construct"
+    },
+    "patternExpression" : {
+      "@id" : "http://w3id.org/def/ontoreq#patternExpression"
+    },
+    "identifier" : {
+      "@id" : "http://w3id.org/def/ontoreq#identifier"
+    },
+    "statement" : {
+      "@id" : "http://w3id.org/def/ontoreq#statement",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "OntologicalRequirement" : {
+      "@id" : "http://w3id.org/def/ontoreq#OntologicalRequirement"
+    },
+    "PatternImplementation" : {
+      "@id" : "http://w3id.org/def/ontoreq#PatternImplementation"
+    },
+    "hasRequirement" : {
+      "@id" : "http://w3id.org/def/ontoreq#hasRequirement",
+      "@type" : "@id"
+    },
+    "answer" : {
+      "@id" : "http://w3id.org/def/ontoreq#answer",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "expressivity" : {
+      "@id" : "http://w3id.org/def/ontoreq#expressivity"
+    },
+    "usageExample" : {
+      "@id" : "http://w3id.org/def/ontoreq#usageExample"
+    },
+    "Ontology" : {
+      "@id" : "http://w3id.org/def/ontoreq#Ontology"
+    }
+  }
+}
