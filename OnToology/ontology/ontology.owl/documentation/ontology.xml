@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="http://w3id.org/def/ontoreq">
         <dc:title>Ontology model for ontological requirements</dc:title>
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
-        <terms:creator>&quot;Alba Fernandez Izquierdo&quot;</terms:creator>
+        <terms:creator>Alba Fernandez Izquierdo</terms:creator>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <rdfs:comment>This ontology describes ontological requirements and their relation with lexico-syntactic patterns</rdfs:comment>
         <owl:versionInfo>0.0.1</owl:versionInfo>
