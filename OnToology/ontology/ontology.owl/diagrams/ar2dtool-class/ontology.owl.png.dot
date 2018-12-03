@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:PatternImplementation" "base:OntologicalRequirement" "base:LexicoSyntacticPattern" ; /*classes style*/
+	"NULL" -> "base:OntologicalRequirement" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:hasRequirement" [ label = "owl:onProperty" ];
+	"NULL" -> "base:PatternImplementation" [ label = "owl:onClass" ];
+	"NULL" -> "base:hasImplementation" [ label = "owl:onProperty" ];
+	"NULL" -> "base:LexicoSyntacticPattern" [ label = "owl:onClass" ];
+	"NULL" -> "base:belongsTo" [ label = "owl:onProperty" ];
+	"owl:Thing" -> "base:OntologicalRequirement" [ label = "base:hasRequirement" ];
+	"base:LexicoSyntacticPattern" -> "owl:Thing" [ label = "base:patternExpression" ];
+	"base:OntologicalRequirement" -> "rdfs:Literal" [ label = "base:competencyQuestion" ];
+	"base:OntologicalRequirement" -> "rdfs:Literal" [ label = "base:statement" ];
+	"owl:Thing" -> "xsd:anyURI" [ label = "base:uri" ];
+	"base:OntologicalRequirement" -> "rdfs:Literal" [ label = "base:answer" ];
+
+}
