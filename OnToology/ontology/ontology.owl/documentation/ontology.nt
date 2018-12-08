@@ -91,10 +91,10 @@
 <http://w3id.org/def/ontoreq#ontologyDesignPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/def/ontoreq#ontologyDesignPattern> <http://www.w3.org/2000/01/rdf-schema#label> "ontology design pattern" .
 # 
-# http://w3id.org/def/ontoreq#patternExpression
-<http://w3id.org/def/ontoreq#patternExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/def/ontoreq#patternExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> .
-<http://w3id.org/def/ontoreq#patternExpression> <http://www.w3.org/2000/01/rdf-schema#label> "pattern expression" .
+# http://w3id.org/def/ontoreq#patternFormalization
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> .
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/2000/01/rdf-schema#label> "pattern formalization" .
 # 
 # http://w3id.org/def/ontoreq#statement
 <http://w3id.org/def/ontoreq#statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -137,7 +137,7 @@ _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq
 _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#patternExpression> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#patternFormalization> .
 _:genid4 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Lexico-Syntactic Pattern" .
 # 
