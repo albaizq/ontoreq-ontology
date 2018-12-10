@@ -7,11 +7,11 @@
 @base <http://w3id.org/def/ontoreq> .
 
 <http://w3id.org/def/ontoreq> rdf:type owl:Ontology ;
-                               <http://purl.org/dc/elements/1.1/title> "Ontology model for ontological requirements" ;
+                               <http://purl.org/dc/elements/1.1/title> "Vocabulary for ontological requirements" ;
                                <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ,
                                                                   "Alba Fernandez Izquierdo" ;
                                <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                               rdfs:comment "This ontology describes ontological requirements and their relation with lexico-syntactic patterns" ;
+                               rdfs:comment "This vocabulary describes ontological requirements and their relation with lexico-syntactic patterns" ;
                                owl:versionInfo "0.0.1" .
 
 #################################################################

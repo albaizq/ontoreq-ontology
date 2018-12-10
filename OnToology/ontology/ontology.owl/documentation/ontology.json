@@ -103,7 +103,7 @@
   "@id" : "http://w3id.org/def/ontoreq",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Ontology model for ontological requirements"
+    "@value" : "Vocabulary for ontological requirements"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/net/mpoveda"
@@ -114,7 +114,7 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This ontology describes ontological requirements and their relation with lexico-syntactic patterns"
+    "@value" : "This vocabulary describes ontological requirements and their relation with lexico-syntactic patterns"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.1"

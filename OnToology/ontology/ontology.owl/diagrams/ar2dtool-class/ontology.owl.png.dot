@@ -10,8 +10,8 @@ node [shape = rectangle, color="orange"]; "base:PatternImplementation" "base:Ont
 	"NULL" -> "base:patternFormalization" [ label = "owl:onProperty" ];
 	"NULL" -> "base:ontologyDesignPattern" [ label = "owl:onProperty" ];
 	"NULL" -> "rdfs:Literal" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "base:usageExample" [ label = "owl:onProperty" ];
 	"NULL" -> "base:belongsTo" [ label = "owl:onProperty" ];
+	"NULL" -> "base:usageExample" [ label = "owl:onProperty" ];
 	"NULL" -> "base:PatternImplementation" [ label = "owl:onClass" ];
 	"NULL" -> "base:OntologicalRequirement" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasImplementation" [ label = "owl:onProperty" ];
