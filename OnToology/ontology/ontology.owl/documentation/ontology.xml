@@ -181,12 +181,12 @@
     
 
 
-    <!-- http://w3id.org/def/ontoreq#patternExpression -->
+    <!-- http://w3id.org/def/ontoreq#patternFormalization -->
 
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#patternExpression">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#patternFormalization">
         <rdfs:domain rdf:resource="http://w3id.org/def/ontoreq#LexicoSyntacticPattern"/>
-        <rdfs:label>pattern expression</rdfs:label>
+        <rdfs:label>pattern formalization</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -258,7 +258,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#patternExpression"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#patternFormalization"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>

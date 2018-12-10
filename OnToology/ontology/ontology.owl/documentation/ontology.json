@@ -37,7 +37,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/def/ontoreq#patternExpression"
+    "@id" : "http://w3id.org/def/ontoreq#patternFormalization"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -250,13 +250,13 @@
     "@value" : "ontology design pattern"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/ontoreq#patternExpression",
+  "@id" : "http://w3id.org/def/ontoreq#patternFormalization",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://w3id.org/def/ontoreq#LexicoSyntacticPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "pattern expression"
+    "@value" : "pattern formalization"
   } ]
 }, {
   "@id" : "http://w3id.org/def/ontoreq#statement",

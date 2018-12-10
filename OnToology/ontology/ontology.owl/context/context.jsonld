@@ -35,6 +35,9 @@
     "LexicoSyntacticPattern" : {
       "@id" : "http://w3id.org/def/ontoreq#LexicoSyntacticPattern"
     },
+    "patternFormalization" : {
+      "@id" : "http://w3id.org/def/ontoreq#patternFormalization"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
@@ -43,9 +46,6 @@
     },
     "construct" : {
       "@id" : "http://w3id.org/def/ontoreq#construct"
-    },
-    "patternExpression" : {
-      "@id" : "http://w3id.org/def/ontoreq#patternExpression"
     },
     "identifier" : {
       "@id" : "http://w3id.org/def/ontoreq#identifier"
