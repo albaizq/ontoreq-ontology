@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="21" parse.nodes="19" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="22" parse.nodes="20" parse.order="free">
       <node id="nid_http://w3id.org/def/ontoreq">
          <data key="d0">
             <y:ShapeNode>
@@ -41,6 +41,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_http://www.garcia-castro.com/foaf.rdf#me">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="400.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.garcia-castro.com/foaf.rdf#me</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_:creator1" source="nid_http://w3id.org/def/ontoreq" target="nid_http://www.garcia-castro.com/foaf.rdf#me">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">:creator</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_http://purl.org/net/mpoveda">
          <data key="d0">
             <y:ShapeNode>
@@ -53,7 +76,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_:creator1" source="nid_http://w3id.org/def/ontoreq" target="nid_http://purl.org/net/mpoveda">
+    <edge id="eid_:creator2" source="nid_http://w3id.org/def/ontoreq" target="nid_http://purl.org/net/mpoveda">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -88,7 +111,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty2" source="nid_NULL" target="nid_base:hasRequirement">
+    <edge id="eid_owl:onProperty3" source="nid_NULL" target="nid_base:hasRequirement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -111,7 +134,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty3" source="nid_NULL" target="nid_base:name">
+    <edge id="eid_owl:onProperty4" source="nid_NULL" target="nid_base:name">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -134,7 +157,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty4" source="nid_NULL" target="nid_base:construct">
+    <edge id="eid_owl:onProperty5" source="nid_NULL" target="nid_base:construct">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -157,7 +180,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty5" source="nid_NULL" target="nid_base:patternFormalization">
+    <edge id="eid_owl:onProperty6" source="nid_NULL" target="nid_base:patternFormalization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -180,7 +203,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty6" source="nid_NULL" target="nid_base:ontologyDesignPattern">
+    <edge id="eid_owl:onProperty7" source="nid_NULL" target="nid_base:ontologyDesignPattern">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -203,7 +226,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom7" source="nid_NULL" target="nid_rdfs:Literal">
+    <edge id="eid_owl:someValuesFrom8" source="nid_NULL" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -226,7 +249,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty8" source="nid_NULL" target="nid_base:usageExample">
+    <edge id="eid_owl:onProperty9" source="nid_NULL" target="nid_base:usageExample">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -249,7 +272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty9" source="nid_NULL" target="nid_base:belongsTo">
+    <edge id="eid_owl:onProperty10" source="nid_NULL" target="nid_base:belongsTo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -272,7 +295,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass10" source="nid_NULL" target="nid_base:PatternImplementation">
+    <edge id="eid_owl:onClass11" source="nid_NULL" target="nid_base:PatternImplementation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -295,7 +318,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom11" source="nid_NULL" target="nid_base:OntologicalRequirement">
+    <edge id="eid_owl:allValuesFrom12" source="nid_NULL" target="nid_base:OntologicalRequirement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -318,7 +341,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty12" source="nid_NULL" target="nid_base:hasImplementation">
+    <edge id="eid_owl:onProperty13" source="nid_NULL" target="nid_base:hasImplementation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -341,7 +364,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty13" source="nid_NULL" target="nid_base:expressivity">
+    <edge id="eid_owl:onProperty14" source="nid_NULL" target="nid_base:expressivity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -364,7 +387,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass14" source="nid_NULL" target="nid_base:LexicoSyntacticPattern">
+    <edge id="eid_owl:onClass15" source="nid_NULL" target="nid_base:LexicoSyntacticPattern">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -387,7 +410,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasRequirement15" source="nid_owl:Thing" target="nid_base:OntologicalRequirement">
+    <edge id="eid_base:hasRequirement16" source="nid_owl:Thing" target="nid_base:OntologicalRequirement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -398,7 +421,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:patternFormalization16" source="nid_base:LexicoSyntacticPattern" target="nid_owl:Thing">
+    <edge id="eid_base:patternFormalization17" source="nid_base:LexicoSyntacticPattern" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -409,7 +432,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:competencyQuestion17" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
+    <edge id="eid_base:competencyQuestion18" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -420,7 +443,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:statement18" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
+    <edge id="eid_base:statement19" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -443,7 +466,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:uri19" source="nid_owl:Thing" target="nid_xsd:anyURI">
+    <edge id="eid_base:uri20" source="nid_owl:Thing" target="nid_xsd:anyURI">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -454,7 +477,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:answer20" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
+    <edge id="eid_base:answer21" source="nid_base:OntologicalRequirement" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
