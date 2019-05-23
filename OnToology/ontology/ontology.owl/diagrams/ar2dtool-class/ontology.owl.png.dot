@@ -3,6 +3,7 @@ rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "base:PatternImplementation" "base:OntologicalRequirement" "base:LexicoSyntacticPattern" ; /*classes style*/
 	"http://w3id.org/def/ontoreq" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+	"http://w3id.org/def/ontoreq" -> "http://www.garcia-castro.com/foaf.rdf#me" [ label = ":creator" ];
 	"http://w3id.org/def/ontoreq" -> "http://purl.org/net/mpoveda" [ label = ":creator" ];
 	"NULL" -> "base:hasRequirement" [ label = "owl:onProperty" ];
 	"NULL" -> "base:name" [ label = "owl:onProperty" ];
