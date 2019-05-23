@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/def/ontoreq#"
+     xml:base="http://w3id.org/def/ontoreq"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/def/ontoreq">
+        <dc:title>Ontology model for ontological requirements</dc:title>
+        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:creator>Alba Fernandez Izquierdo</terms:creator>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <rdfs:comment>This ontology describes ontological requirements and their relation with lexico-syntactic patterns</rdfs:comment>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/ontoreq#belongsTo">
+        <rdfs:label>belongs to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#extractedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/ontoreq#extractedFrom">
+        <owl:inverseOf rdf:resource="http://w3id.org/def/ontoreq#hasRequirement"/>
+        <rdfs:label>extracted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#hasImplementation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/ontoreq#hasImplementation">
+        <rdfs:label>has implementation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#hasRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/ontoreq#hasRequirement">
+        <rdfs:range rdf:resource="http://w3id.org/def/ontoreq#OntologicalRequirement"/>
+        <rdfs:label>has requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#answer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#answer">
+        <rdfs:domain rdf:resource="http://w3id.org/def/ontoreq#OntologicalRequirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>answer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#competencyQuestion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#competencyQuestion">
+        <rdfs:domain rdf:resource="http://w3id.org/def/ontoreq#OntologicalRequirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>competency question</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#construct -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#construct">
+        <rdfs:label>OWL construct</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#expressivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#expressivity">
+        <rdfs:label>DL expressivity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#identifier">
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#ontologyDesignPattern -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#ontologyDesignPattern">
+        <rdfs:label>ontology design pattern</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#patternFormalization -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#patternFormalization">
+        <rdfs:domain rdf:resource="http://w3id.org/def/ontoreq#LexicoSyntacticPattern"/>
+        <rdfs:label>pattern formalization</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#statement -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#statement">
+        <rdfs:domain rdf:resource="http://w3id.org/def/ontoreq#OntologicalRequirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>statement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#uri -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#uri">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>uri</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#usageExample -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/ontoreq#usageExample">
+        <rdfs:label>usage example</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#LexicoSyntacticPattern -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ontoreq#LexicoSyntacticPattern">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#hasImplementation"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/def/ontoreq#PatternImplementation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#usageExample"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#patternFormalization"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Lexico-Syntactic Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#OntologicalRequirement -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ontoreq#OntologicalRequirement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#belongsTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/def/ontoreq#LexicoSyntacticPattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Ontological requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#Ontology -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ontoreq#Ontology">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#hasRequirement"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/def/ontoreq#OntologicalRequirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/ontoreq#PatternImplementation -->
+
+
+    <owl:Class rdf:about="http://w3id.org/def/ontoreq#PatternImplementation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#ontologyDesignPattern"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#construct"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/ontoreq#expressivity"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Pattern implementation</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,188 @@
+@prefix : <http://w3id.org/def/ontoreq#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/def/ontoreq> .
+
+<http://w3id.org/def/ontoreq> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/elements/1.1/title> "Ontology model for ontological requirements" ;
+                               <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ,
+                                                                  "Alba Fernandez Izquierdo" ;
+                               <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                               rdfs:comment "This ontology describes ontological requirements and their relation with lexico-syntactic patterns" ;
+                               owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/def/ontoreq#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:label "belongs to" .
+
+
+###  http://w3id.org/def/ontoreq#extractedFrom
+:extractedFrom rdf:type owl:ObjectProperty ;
+               owl:inverseOf :hasRequirement ;
+               rdfs:label "extracted from" .
+
+
+###  http://w3id.org/def/ontoreq#hasImplementation
+:hasImplementation rdf:type owl:ObjectProperty ;
+                   rdfs:label "has implementation" .
+
+
+###  http://w3id.org/def/ontoreq#hasRequirement
+:hasRequirement rdf:type owl:ObjectProperty ;
+                rdfs:range :OntologicalRequirement ;
+                rdfs:label "has requirement" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/def/ontoreq#answer
+:answer rdf:type owl:DatatypeProperty ;
+        rdfs:domain :OntologicalRequirement ;
+        rdfs:range rdfs:Literal ;
+        rdfs:label "answer" .
+
+
+###  http://w3id.org/def/ontoreq#competencyQuestion
+:competencyQuestion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :OntologicalRequirement ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "competency question" .
+
+
+###  http://w3id.org/def/ontoreq#construct
+:construct rdf:type owl:DatatypeProperty ;
+           rdfs:label "OWL construct" .
+
+
+###  http://w3id.org/def/ontoreq#expressivity
+:expressivity rdf:type owl:DatatypeProperty ;
+              rdfs:label "DL expressivity" .
+
+
+###  http://w3id.org/def/ontoreq#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:label "identifier" .
+
+
+###  http://w3id.org/def/ontoreq#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:label "name" .
+
+
+###  http://w3id.org/def/ontoreq#ontologyDesignPattern
+:ontologyDesignPattern rdf:type owl:DatatypeProperty ;
+                       rdfs:label "ontology design pattern" .
+
+
+###  http://w3id.org/def/ontoreq#patternFormalization
+:patternFormalization rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :LexicoSyntacticPattern ;
+                      rdfs:label "pattern formalization" .
+
+
+###  http://w3id.org/def/ontoreq#statement
+:statement rdf:type owl:DatatypeProperty ;
+           rdfs:domain :OntologicalRequirement ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "statement" .
+
+
+###  http://w3id.org/def/ontoreq#uri
+:uri rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:anyURI ;
+     rdfs:label "uri" .
+
+
+###  http://w3id.org/def/ontoreq#usageExample
+:usageExample rdf:type owl:DatatypeProperty ;
+              rdfs:label "usage example" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/def/ontoreq#LexicoSyntacticPattern
+:LexicoSyntacticPattern rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasImplementation ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :PatternImplementation
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :name ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :usageExample ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :patternFormalization ;
+                                          owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ;
+                        rdfs:label "Lexico-Syntactic Pattern" .
+
+
+###  http://w3id.org/def/ontoreq#OntologicalRequirement
+:OntologicalRequirement rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :belongsTo ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :LexicoSyntacticPattern
+                                        ] ;
+                        rdfs:label "Ontological requirement" .
+
+
+###  http://w3id.org/def/ontoreq#Ontology
+:Ontology rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasRequirement ;
+                            owl:allValuesFrom :OntologicalRequirement
+                          ] ;
+          rdfs:label "Ontology" .
+
+
+###  http://w3id.org/def/ontoreq#PatternImplementation
+:PatternImplementation rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :ontologyDesignPattern ;
+                                         owl:someValuesFrom rdfs:Literal
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :construct ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :expressivity ;
+                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                       ] ;
+                       rdfs:label "Pattern implementation" .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

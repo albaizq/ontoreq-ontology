@@ -1,0 +1,470 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/def/ontoreq" ],
+    "title" : {
+      "undefined" : "Ontology model for ontological requirements"
+    },
+    "iri" : "http://w3id.org/def/ontoreq",
+    "version" : "0.0.1",
+    "author" : [ "http://purl.org/net/mpoveda", "Alba Fernandez Izquierdo" ],
+    "comments" : {
+      "undefined" : "This ontology describes ontological requirements and their relation with lexico-syntactic patterns"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Alba Fernandez Izquierdo",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://purl.org/net/mpoveda",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Ontology model for ontological requirements",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 4,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 11,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#Ontology",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ontology",
+      "undefined" : "Ontology"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#OntologicalRequirement",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OntologicalRequirement",
+      "undefined" : "Ontological requirement"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#PatternImplementation",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatternImplementation",
+      "undefined" : "Pattern implementation"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#LexicoSyntacticPattern",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicoSyntacticPattern",
+      "undefined" : "Lexico-Syntactic Pattern"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "12",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/def/ontoreq#extractedFrom",
+    "inverse" : "3",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "extractedFrom",
+      "undefined" : "extracted from"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#expressivity",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "expressivity",
+      "undefined" : "DL expressivity"
+    },
+    "minCardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#name",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "8",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#hasRequirement",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRequirement",
+      "undefined" : "has requirement"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#ontologyDesignPattern",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "ontologyDesignPattern",
+      "undefined" : "ontology design pattern"
+    },
+    "domain" : "13",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#statement",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "statement",
+      "undefined" : "statement"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#usageExample",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "usageExample",
+      "undefined" : "usage example"
+    },
+    "domain" : "8",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#competencyQuestion",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "competencyQuestion",
+      "undefined" : "competency question"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#hasImplementation",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasImplementation",
+      "undefined" : "has implementation"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#uri",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "uri",
+      "undefined" : "uri"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#patternExpression",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "patternExpression",
+      "undefined" : "pattern expression"
+    },
+    "minCardinality" : "1",
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#hasRequirement",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRequirement",
+      "undefined" : "has requirement"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#answer",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "answer",
+      "undefined" : "answer"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#identifier",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#belongsTo",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "undefined" : "belongs to"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/def/ontoreq#construct",
+    "baseIri" : "http://w3id.org/def/ontoreq",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "construct",
+      "undefined" : "OWL construct"
+    },
+    "minCardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  } ]
+}

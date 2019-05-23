@@ -1,0 +1,177 @@
+<http://w3id.org/def/ontoreq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/def/ontoreq> <http://purl.org/dc/elements/1.1/title> "Ontology model for ontological requirements" .
+<http://w3id.org/def/ontoreq> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
+<http://w3id.org/def/ontoreq> <http://purl.org/dc/terms/creator> "Alba Fernandez Izquierdo" .
+<http://w3id.org/def/ontoreq> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://w3id.org/def/ontoreq> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology describes ontological requirements and their relation with lexico-syntactic patterns" .
+<http://w3id.org/def/ontoreq> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/ontoreq#belongsTo
+<http://w3id.org/def/ontoreq#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/ontoreq#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to" .
+# 
+# http://w3id.org/def/ontoreq#extractedFrom
+<http://w3id.org/def/ontoreq#extractedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/ontoreq#extractedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/def/ontoreq#hasRequirement> .
+<http://w3id.org/def/ontoreq#extractedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "extracted from" .
+# 
+# http://w3id.org/def/ontoreq#hasImplementation
+<http://w3id.org/def/ontoreq#hasImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/ontoreq#hasImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation" .
+# 
+# http://w3id.org/def/ontoreq#hasRequirement
+<http://w3id.org/def/ontoreq#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/ontoreq#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/ontoreq#OntologicalRequirement> .
+<http://w3id.org/def/ontoreq#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "has requirement" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/ontoreq#answer
+<http://w3id.org/def/ontoreq#answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#answer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#OntologicalRequirement> .
+<http://w3id.org/def/ontoreq#answer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#answer> <http://www.w3.org/2000/01/rdf-schema#label> "answer" .
+# 
+# http://w3id.org/def/ontoreq#competencyQuestion
+<http://w3id.org/def/ontoreq#competencyQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#competencyQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#OntologicalRequirement> .
+<http://w3id.org/def/ontoreq#competencyQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#competencyQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "competency question" .
+# 
+# http://w3id.org/def/ontoreq#construct
+<http://w3id.org/def/ontoreq#construct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#construct> <http://www.w3.org/2000/01/rdf-schema#label> "OWL construct" .
+# 
+# http://w3id.org/def/ontoreq#expressivity
+<http://w3id.org/def/ontoreq#expressivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#expressivity> <http://www.w3.org/2000/01/rdf-schema#label> "DL expressivity" .
+# 
+# http://w3id.org/def/ontoreq#identifier
+<http://w3id.org/def/ontoreq#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# http://w3id.org/def/ontoreq#name
+<http://w3id.org/def/ontoreq#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://w3id.org/def/ontoreq#ontologyDesignPattern
+<http://w3id.org/def/ontoreq#ontologyDesignPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#ontologyDesignPattern> <http://www.w3.org/2000/01/rdf-schema#label> "ontology design pattern" .
+# 
+# http://w3id.org/def/ontoreq#patternFormalization
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> .
+<http://w3id.org/def/ontoreq#patternFormalization> <http://www.w3.org/2000/01/rdf-schema#label> "pattern formalization" .
+# 
+# http://w3id.org/def/ontoreq#statement
+<http://w3id.org/def/ontoreq#statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#statement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/ontoreq#OntologicalRequirement> .
+<http://w3id.org/def/ontoreq#statement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#statement> <http://www.w3.org/2000/01/rdf-schema#label> "statement" .
+# 
+# http://w3id.org/def/ontoreq#uri
+<http://w3id.org/def/ontoreq#uri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#uri> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://w3id.org/def/ontoreq#uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri" .
+# 
+# http://w3id.org/def/ontoreq#usageExample
+<http://w3id.org/def/ontoreq#usageExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/ontoreq#usageExample> <http://www.w3.org/2000/01/rdf-schema#label> "usage example" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/ontoreq#LexicoSyntacticPattern
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#hasImplementation> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/def/ontoreq#PatternImplementation> .
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#name> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#usageExample> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#patternFormalization> .
+_:genid4 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://w3id.org/def/ontoreq#LexicoSyntacticPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Lexico-Syntactic Pattern" .
+# 
+# http://w3id.org/def/ontoreq#OntologicalRequirement
+<http://w3id.org/def/ontoreq#OntologicalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ontoreq#OntologicalRequirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#belongsTo> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/def/ontoreq#LexicoSyntacticPattern> .
+<http://w3id.org/def/ontoreq#OntologicalRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Ontological requirement" .
+# 
+# http://w3id.org/def/ontoreq#Ontology
+<http://w3id.org/def/ontoreq#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ontoreq#Ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#hasRequirement> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/def/ontoreq#OntologicalRequirement> .
+<http://w3id.org/def/ontoreq#Ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology" .
+# 
+# http://w3id.org/def/ontoreq#PatternImplementation
+<http://w3id.org/def/ontoreq#PatternImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/ontoreq#PatternImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#ontologyDesignPattern> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/def/ontoreq#PatternImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#construct> .
+_:genid8 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://w3id.org/def/ontoreq#PatternImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/def/ontoreq#expressivity> .
+_:genid9 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://w3id.org/def/ontoreq#PatternImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Pattern implementation" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

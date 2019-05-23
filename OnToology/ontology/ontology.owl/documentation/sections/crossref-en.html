@@ -1,0 +1,402 @@
+<h2  id="crossreference" class="list">Cross reference for Ontology model for ontological requirements classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology model for ontological requirements.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#LexicoSyntacticPattern"
+            title="http://w3id.org/def/ontoreq#LexicoSyntacticPattern">Lexico-Syntactic Pattern</a>
+      </li>
+      <li>
+         <a href="#OntologicalRequirement"
+            title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+      </li>
+      <li>
+         <a href="#Ontology" title="http://w3id.org/def/ontoreq#Ontology">Ontology</a>
+      </li>
+      <li>
+         <a href="#PatternImplementation"
+            title="http://w3id.org/def/ontoreq#PatternImplementation">Pattern implementation</a>
+      </li>
+   </ul>
+   <div class="entity" id="LexicoSyntacticPattern">
+      <h3>Lexico-Syntactic Pattern<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#LexicoSyntacticPattern</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#hasImplementation" title="http://w3id.org/def/ontoreq#hasImplementation">has implementation</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <a href="#PatternImplementation"
+               title="http://w3id.org/def/ontoreq#PatternImplementation">Pattern implementation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#name" title="http://w3id.org/def/ontoreq#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+         </dd>
+         <dd>
+            <a href="#usageExample" title="http://w3id.org/def/ontoreq#usageExample">usage example</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+         </dd>
+         <dd>
+            <a href="#patternFormalization" title="http://w3id.org/def/ontoreq#patternFormalization">pattern formalization</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#patternFormalization" title="http://w3id.org/def/ontoreq#patternFormalization">pattern formalization</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OntologicalRequirement">
+      <h3>Ontological requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#OntologicalRequirement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#belongsTo" title="http://w3id.org/def/ontoreq#belongsTo">belongs to</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <a href="#LexicoSyntacticPattern"
+               title="http://w3id.org/def/ontoreq#LexicoSyntacticPattern">Lexico-Syntactic Pattern</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#answer" title="http://w3id.org/def/ontoreq#answer">answer</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#competencyQuestion" title="http://w3id.org/def/ontoreq#competencyQuestion">competency question</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#statement" title="http://w3id.org/def/ontoreq#statement">statement</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRequirement" title="http://w3id.org/def/ontoreq#hasRequirement">has requirement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ontology">
+      <h3>Ontology<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#Ontology</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#hasRequirement" title="http://w3id.org/def/ontoreq#hasRequirement">has requirement</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#OntologicalRequirement"
+               title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PatternImplementation">
+      <h3>Pattern implementation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#PatternImplementation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ontologyDesignPattern"
+               title="http://w3id.org/def/ontoreq#ontologyDesignPattern">ontology design pattern</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+         </dd>
+         <dd>
+            <a href="#construct" title="http://w3id.org/def/ontoreq#construct">OWL construct</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#expressivity" title="http://w3id.org/def/ontoreq#expressivity">DL expressivity</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#belongsTo" title="http://w3id.org/def/ontoreq#belongsTo">belongs to</a>
+      </li>
+      <li>
+         <a href="#extractedFrom" title="http://w3id.org/def/ontoreq#extractedFrom">extracted from</a>
+      </li>
+      <li>
+         <a href="#hasImplementation" title="http://w3id.org/def/ontoreq#hasImplementation">has implementation</a>
+      </li>
+      <li>
+         <a href="#hasRequirement" title="http://w3id.org/def/ontoreq#hasRequirement">has requirement</a>
+      </li>
+   </ul>
+   <div class="entity" id="belongsTo">
+      <h3>belongs to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#belongsTo</p>
+   </div>
+   <div class="entity" id="extractedFrom">
+      <h3>extracted from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#extractedFrom</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasRequirement" title="http://w3id.org/def/ontoreq#hasRequirement">has requirement</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasImplementation">
+      <h3>has implementation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#hasImplementation</p>
+   </div>
+   <div class="entity" id="hasRequirement">
+      <h3>has requirement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#hasRequirement</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OntologicalRequirement"
+                  title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#extractedFrom" title="http://w3id.org/def/ontoreq#extractedFrom">extracted from</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#answer" title="http://w3id.org/def/ontoreq#answer">answer</a>
+      </li>
+      <li>
+         <a href="#competencyQuestion" title="http://w3id.org/def/ontoreq#competencyQuestion">competency question</a>
+      </li>
+      <li>
+         <a href="#expressivity" title="http://w3id.org/def/ontoreq#expressivity">DL expressivity</a>
+      </li>
+      <li>
+         <a href="#identifier" title="http://w3id.org/def/ontoreq#identifier">identifier</a>
+      </li>
+      <li>
+         <a href="#name" title="http://w3id.org/def/ontoreq#name">name</a>
+      </li>
+      <li>
+         <a href="#ontologyDesignPattern"
+            title="http://w3id.org/def/ontoreq#ontologyDesignPattern">ontology design pattern</a>
+      </li>
+      <li>
+         <a href="#construct" title="http://w3id.org/def/ontoreq#construct">OWL construct</a>
+      </li>
+      <li>
+         <a href="#patternFormalization" title="http://w3id.org/def/ontoreq#patternFormalization">pattern formalization</a>
+      </li>
+      <li>
+         <a href="#statement" title="http://w3id.org/def/ontoreq#statement">statement</a>
+      </li>
+      <li>
+         <a href="#uri" title="http://w3id.org/def/ontoreq#uri">uri</a>
+      </li>
+      <li>
+         <a href="#usageExample" title="http://w3id.org/def/ontoreq#usageExample">usage example</a>
+      </li>
+   </ul>
+   <div class="entity" id="answer">
+      <h3>answer<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#answer</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OntologicalRequirement"
+                  title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="competencyQuestion">
+      <h3>competency question<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#competencyQuestion</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OntologicalRequirement"
+                  title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="expressivity">
+      <h3>DL expressivity<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#expressivity</p>
+   </div>
+   <div class="entity" id="identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#identifier</p>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#name</p>
+   </div>
+   <div class="entity" id="ontologyDesignPattern">
+      <h3>ontology design pattern<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#ontologyDesignPattern</p>
+   </div>
+   <div class="entity" id="construct">
+      <h3>OWL construct<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#construct</p>
+   </div>
+   <div class="entity" id="patternFormalization">
+      <h3>pattern formalization<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#patternFormalization</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LexicoSyntacticPattern"
+                  title="http://w3id.org/def/ontoreq#LexicoSyntacticPattern">Lexico-Syntactic Pattern</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="statement">
+      <h3>statement<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#statement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OntologicalRequirement"
+                  title="http://w3id.org/def/ontoreq#OntologicalRequirement">Ontological requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uri">
+      <h3>uri<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#uri</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usageExample">
+      <h3>usage example<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/ontoreq#usageExample</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

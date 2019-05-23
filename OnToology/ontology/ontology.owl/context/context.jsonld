@@ -1,0 +1,87 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "http://w3id.org/def/ontoreq#belongsTo",
+      "@type" : "@id"
+    },
+    "ontologyDesignPattern" : {
+      "@id" : "http://w3id.org/def/ontoreq#ontologyDesignPattern"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasImplementation" : {
+      "@id" : "http://w3id.org/def/ontoreq#hasImplementation",
+      "@type" : "@id"
+    },
+    "extractedFrom" : {
+      "@id" : "http://w3id.org/def/ontoreq#extractedFrom",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "competencyQuestion" : {
+      "@id" : "http://w3id.org/def/ontoreq#competencyQuestion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "uri" : {
+      "@id" : "http://w3id.org/def/ontoreq#uri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "LexicoSyntacticPattern" : {
+      "@id" : "http://w3id.org/def/ontoreq#LexicoSyntacticPattern"
+    },
+    "patternFormalization" : {
+      "@id" : "http://w3id.org/def/ontoreq#patternFormalization"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://w3id.org/def/ontoreq#name"
+    },
+    "construct" : {
+      "@id" : "http://w3id.org/def/ontoreq#construct"
+    },
+    "identifier" : {
+      "@id" : "http://w3id.org/def/ontoreq#identifier"
+    },
+    "statement" : {
+      "@id" : "http://w3id.org/def/ontoreq#statement",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "OntologicalRequirement" : {
+      "@id" : "http://w3id.org/def/ontoreq#OntologicalRequirement"
+    },
+    "PatternImplementation" : {
+      "@id" : "http://w3id.org/def/ontoreq#PatternImplementation"
+    },
+    "hasRequirement" : {
+      "@id" : "http://w3id.org/def/ontoreq#hasRequirement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "answer" : {
+      "@id" : "http://w3id.org/def/ontoreq#answer",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "expressivity" : {
+      "@id" : "http://w3id.org/def/ontoreq#expressivity"
+    },
+    "usageExample" : {
+      "@id" : "http://w3id.org/def/ontoreq#usageExample"
+    },
+    "Ontology" : {
+      "@id" : "http://w3id.org/def/ontoreq#Ontology"
+    }
+  }
+}
